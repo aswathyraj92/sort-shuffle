@@ -1,0 +1,146 @@
+body {
+    font-family: "Helvetica Neue", "Arial", sans-serif; 
+}
+
+.appContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    width: 100%;
+    background: #efefef;
+}
+
+#root {
+    display: flex;
+    flex-flow: row;
+}
+
+h1 {
+    text-align: center;
+    background: #FFFFFF;
+    margin: 0;
+    color: initial;
+    padding: 15px 0;
+}
+
+.divider {
+    border-top: 5px solid #bbb;
+    margin: 0%;
+}
+
+.numbercard-block {
+    width: 80%;
+    order: 1;
+}
+
+.action-btns {
+    width: 20%;
+    margin: 0 15px 0 0;
+    order: 2;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+ 
+ul li {
+    list-style: none;
+    padding: 45px 0;
+    font-size: 4vw;
+    color: #fff;
+    width: calc(100%/3);
+}
+
+
+.shuffle-btn, .sort-btn {
+    display: block;
+    margin: 15px 0;
+    max-width: 25vw;
+    width: 100%;
+    padding: 2vh 0;
+    background: #72c3dc;
+    border: 1px solid #2b8ead;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #2b8ead;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #2b8ead;
+    transition: All 250ms ease;
+    cursor: pointer;
+}
+
+.shuffle-btn:active, .sort-btn:active {
+    box-shadow: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+      background-color: #333333;
+      margin: 0%;
+      color: #FFFFFF;
+      font-size: 23px; 
+      padding: 15px;
+    }
+
+    .divider {
+        border-top: 1px solid #333333;
+    }
+
+    .appContainer {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: initial;
+        width: 100%;
+        background: none;
+    }
+
+    #root {
+        flex-flow: column;
+    }
+   
+    ul {
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+   
+    ul li {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
+        padding: 15px 0;
+        background-color: #efefef !important;
+        color: #333333;
+        border-left: 2vw solid;
+    }
+
+    .action-btns {
+        margin: 0 15%;
+        width: 100%;
+        order: 1;
+    }
+
+    .numbercard-block {
+        width: 100%;
+        order: 2;
+    }
+
+    .shuffle-btn, .sort-btn {
+        display: inline;
+        margin: 15px;
+    }
+
+  }
